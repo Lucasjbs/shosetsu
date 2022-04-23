@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root{
+    --color-bg: #5a0c5a;
+    --color-bg-variant: #330033;
+    --color-primary: rgba(50, 120, 200, 1);
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-primary-gold: rgba(255, 217, 0, 1);
+    --color-light: rgba(255, 255, 255, 0.6);
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--color-bg);
+    color: #fff;
+    line-height: 1.5;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+header, section, article{
+    margin: 8px;
+    padding: 8px;
+}
+label{
+    display: block;
+}
+textarea{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: var(--color-bg-variant);
+    border-color: var(--color-primary-gold);
+    color: #fff;
+    border-style: ridge;
+    border-width: 3px;
+    resize: none;
+}

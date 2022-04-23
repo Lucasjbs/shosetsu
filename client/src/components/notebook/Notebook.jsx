@@ -19,7 +19,7 @@ const Notebook = () => {
             <div className='form-group' >
             <label htmlFor='rawTextInput'>Enter Raw Text:</label>
             <textarea 
-                rows="6"
+                rows="12"
                 type='text'
                 id='rawTextInput'
                 name='rawTextInput'

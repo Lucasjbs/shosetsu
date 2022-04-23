@@ -1,0 +1,16 @@
+#header-tutorial{
+    display: block;
+    overflow: hidden;
+}
+header h1{
+    text-align: center;
+    color: var(--color-primary);
+}
+.card-tutorial{
+    width: 50%;
+    height: 60vh;
+    float: left;
+}
+.card-tutorial-2 img{
+    border-radius: 1rem;
+}

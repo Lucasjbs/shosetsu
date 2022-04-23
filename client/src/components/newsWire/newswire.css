@@ -1,0 +1,12 @@
+#news-articles{
+    display: block;
+    overflow: hidden;
+}
+.card-news{
+    width: 33%;
+    float: left;
+}
+.remaining-content{
+    display: inline-block;
+    width: 100%;
+}
