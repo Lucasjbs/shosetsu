@@ -1,0 +1,12 @@
+#text-display h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+#text-display p{
+    text-align: justify;
+}
+
+#text-display{
+    white-space: pre-wrap;
+}

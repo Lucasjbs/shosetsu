@@ -15,11 +15,11 @@ const Navbar = () => {
 
         <li><Link to={{ pathname: "/story/writing"}}>Story Writing</Link></li>
 
-        <li><Link to={{ pathname: "/story/upload"}}>Story Writing</Link></li>
+        <li><Link to={{ pathname: "/story/upload"}}>Story Upload</Link></li>
 
-        <li><Link to={{ pathname: "/"}}>Text Elements</Link></li>
+        <li><Link to={{ pathname: "/text/elements"}}>Text Elements</Link></li>
 
-        <li><Link to={{ pathname: "/"}}>Translation Displayer</Link></li>
+        <li><Link to={{ pathname: "/text/displayer"}}>Translation Displayer</Link></li>
       </ul>
     </nav>
   )

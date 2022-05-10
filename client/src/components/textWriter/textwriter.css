@@ -1,0 +1,17 @@
+#text-writing button{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 42%;
+}
+#text-writing h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+#text-writing p{
+    text-align: justify;
+}
+
+.text-display{
+    white-space: pre-wrap;
+}

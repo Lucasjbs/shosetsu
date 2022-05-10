@@ -1,11 +1,13 @@
 import React from 'react'
 
-import Notebook from '../../components/notebook/Notebook'
+import Navbar from '../../components/navbar/Navbar'
+import TextWriter from '../../components/textWriter/TextWriter'
 
 const StoryWriting = () => {
   return (
       <>
-        <Notebook />
+        <Navbar />
+        <TextWriter />
       </>
   )
 }

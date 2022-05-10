@@ -27,7 +27,7 @@ header, section, article{
 label{
     display: block;
 }
-textarea{
+textarea, input{
     font-family: 'Open Sans', sans-serif;
     display: block;
     margin: auto;
@@ -38,4 +38,23 @@ textarea{
     border-style: ridge;
     border-width: 3px;
     resize: none;
+}
+img{
+    border-radius: 4px;
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary-gold);
+    background-color: transparent;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary-gold);
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--color-light);
+    color: var(--color-primary);
+    border-color: transparent;
 }
