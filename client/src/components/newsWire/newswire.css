@@ -3,10 +3,52 @@
     overflow: hidden;
 }
 .card-news{
-    width: 33%;
+    width: 24%;
+    height: 60vh;
     float: left;
+    margin: 2rem;
+    padding: 2px;
+    background-color: rgb(169, 169, 169, 0.4);
+    border-radius: 6px;
+}
+.card-news a{
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.card-news img{
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+  width: 80%;
+  height: 30vh;
 }
 .remaining-content{
     display: inline-block;
     width: 100%;
 }
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paginationBttns a {
+    padding: 4px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+  }
+  .paginationBttns a:hover {
+    color: white;
+    background-color: #2b2eff;
+  }
+  .paginationActive a {
+    color: white;
+    background-color: #2b2eff;
+  }

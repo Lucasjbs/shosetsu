@@ -6,6 +6,7 @@ import StoryWriting from './pages/storyWriting/StoryWriting';
 import StoryUpload from './pages/storyUpload/StoryUpload';
 import TextElements from './pages/elements/Elements';
 import TextDisplayer from './pages/translate/Translate';
+import NewsPage from './pages/newsPage/NewsPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/story/upload' element={<StoryUpload/>} />
         <Route path='/text/elements' element={<TextElements/>} />
         <Route path='/text/displayer' element={<TextDisplayer/>} />
+        <Route path='/news/:id' element={<NewsPage/>} />
         <Route path='*' element={<Home />} />
       </Routes>
     </Router>

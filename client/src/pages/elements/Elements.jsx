@@ -1,12 +1,15 @@
 import React from 'react'
 
 import Navbar from '../../components/navbar/Navbar'
+import ElementTutorial from '../../components/elementTutorial/ElementTutorial'
+import Misc from '../../components/devNotes/Misc'
 
 const Elements = () => {
   return (
       <>
         <Navbar />
-        <p>Elements</p>
+        <ElementTutorial />
+        <Misc />
       </>
   )
 }

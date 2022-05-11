@@ -13,7 +13,6 @@ const TextUploader = ({dataUploaded}) => {
         setText(text)
         };
         reader.readAsText(e.target.files[0])
-        console.log("Exe FileManager")
     }
     useEffect(() => {
         dataUploaded(text);

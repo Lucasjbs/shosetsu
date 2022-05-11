@@ -1,31 +1,48 @@
-import React from 'react'
+import React, {useState} from 'react'
+import ReactPaginate from 'react-paginate';
+import { Link } from 'react-router-dom';
+
+
 import './newswire.css'
+import {newsArray} from './newsList'
 
 const NewsWire = () => {
+  const [pageNumber, setPageNumber] = useState(0)
+
+  const newsPerPage = 6
+  const pagesVisited = pageNumber * newsPerPage
+  const handlePageClick = ({selected}) => {
+      setPageNumber(selected)
+  }
+  const pageCount = Math.ceil(newsArray.length / newsPerPage)
+  const displayNews = newsArray.slice(pagesVisited, pagesVisited + newsPerPage).map((value) =>{
+      return (
+        <div className='card-news' key={value.id}>
+          <Link to={{ pathname: "/news/" + value.id}}>
+            <img src={value.img} alt='news_img'></img>
+            <label>{value.label}</label>
+          </Link>
+        </div>
+        )
+  })
+
   return (
       <article id='news-articles'>
-        <h3>Read some articles and news that may help you in your writting:</h3>
+        <h3>Some news and articles that may be of use to you:</h3>
 
-        <div className='card-news'>
-          <img src='http://localhost:3000/dummyImg.png' alt='dummy'></img>
-          <p>News #1</p>
-        </div>
-        <div className='card-news'>
-          <img src='http://localhost:3000/dummyImg.png' alt='dummy'></img>
-          <p>News #2</p>
-        </div>
-        <div className='card-news'>
-          <img src='http://localhost:3000/dummyImg.png' alt='dummy'></img>
-          <p>News #3</p>
-        </div>
-        <div className='card-news'>
-          <img src='http://localhost:3000/dummyImg.png' alt='dummy'></img>
-          <p>News #4</p>
-        </div>
+        {displayNews}
+        <ReactPaginate
+            nextLabel="next >"
+            onPageChange={handlePageClick}
+            pageCount={pageCount}
+            previousLabel="< previous"
+            containerClassName='paginationBttns'
+            nextLinkClassName='nextBttn'
+            activeClassName='paginationActive'
+        />
 
         <div className='remaining-content'>
-          <p>[Pagination of articles here!]</p>
-          <p>The text diplayer page can be used to improve the visualization of translated texts from VNs.</p>
+          <p>The text diplayer page can be used to improve the visualization of translated texts for VNs.</p>
         </div>
       </article>
   )
